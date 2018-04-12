@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+<category>
+<pattern>SQUARE ROOT OF *</pattern>
+<template><think><set name="num"><star/></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the answer to that one is </li>
+</random> 
+<system>
+		python math_aiml/MathScripts/sqrt.py <get name="num"/>
+</system>
+</template>
+</category>
+
+<category>
+<pattern>SQRT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>SQR RT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+
+
+<category>
+<pattern>WHAT IS SQR RT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS SQUARE ROOT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+
+
+<category>
+<pattern>TELL ME WHAT IS SQR RT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS SQUARE ROOT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>TELL ME WHAT SQR RT OF * IS</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT SQUARE ROOT OF * IS</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT SQR RT OF * IS</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT SQUARE ROOT OF * IS</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS SQR RT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS SQUARE ROOT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+
+
+</aiml>

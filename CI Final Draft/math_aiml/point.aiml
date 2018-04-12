@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<category>
+<pattern>* POINT *</pattern>
+<template>
+<random>
+<li>I can't do decimals yet sorry.</li>
+<li>Give me some time I am still working on my basic math skills.</li>
+<li>No decimals please, they throw me off.</li>
+</random>
+</template>
+</category>
+</aiml>

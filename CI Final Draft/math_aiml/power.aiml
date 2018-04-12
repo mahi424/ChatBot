@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<category>
+<pattern>* TO THE POWER OF *</pattern>
+<template><think>
+<set name="num1"><star/></set><set name="num2"><person><star index="2"/></person></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the answer to that one is </li>
+</random> 
+<system>
+		python math_aiml/MathScripts/power.py <get name="num1"/> <get name="num2" />
+</system>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * RAISE TO *</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * RAISED TO *</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * RD POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * TH POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * ND POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * RAISED TO THE * POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * RAISED TO THE * RD POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * RAISED TO THE * TH POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * RAISED TO THE * ND POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>TELL ME WHAT IS * TO THE POWER OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * RAISED TO THE * POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * RAISED TO THE * RD POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * RAISED TO THE * TH POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * RAISED TO THE * ND POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>TELL ME WHAT * TO THE POWER OF * IS</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * RAISED TO THE * POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * RAISED TO THE * RD POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * RAISED TO THE * TH POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * RAISED TO THE * ND POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * TO THE POWER OF * IS</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * RAISED TO THE * POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * RAISED TO THE * RD POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * RAISED TO THE * TH POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * RAISED TO THE * ND POWER IS</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * TO THE POWER OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * RAISED TO THE * POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * RAISED TO THE * RD POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * RAISED TO THE * TH POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * RAISED TO THE * ND POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+
+
+
+</aiml>

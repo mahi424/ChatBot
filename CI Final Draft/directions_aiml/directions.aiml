@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<meta name="author" content="mahi"/>
+
+<meta name="language" content="en"/>
+
+<category>
+
+        <pattern>_ FROM * TO *</pattern>
+
+        <template>
+        	
+        	Directing You From <set name = "start"> <uppercase><star index="2"/></uppercase> 
+        	To </set> <set name = "goal"> <uppercase><star index="3"/></uppercase> </set>
+        	
+      
+    
+       <srai>
+       	<uppercase><get name="start"/> </uppercase>  <uppercase><get name="goal"/> </uppercase> 
+       </srai>
+      </template> 
+   		
+</category>
+<!-- MG CCL -->
+<category>
+      <pattern>MAIN GATE TO CENTRE CIRCLE</pattern>
+      <template>
+        >>>>Take a Straight From MAIN GATE on Rajpath for CENTRE CIRCLE (100m)
+ 	</template>  
+</category>
+
+<category>
+      <pattern>CENTRE CIRCLE TO MAIN GATE</pattern>
+      <template>
+        >>>>Take a Straight From CENTRE CIRCLE on Rajpath for  MAIN GATE (100m)
+ 	</template>  
+</category>
+<!-- CCL CC -->
+<category>
+      <pattern>CENTRE CIRCLE TO CCC</pattern>
+      <template>
+      	>>>>From CENTRE CIRCLE take a left for CCC (10m).</template>  
+</category>
+        	
+ <category>
+      <pattern>CCC TO CENTRE CIRCLE </pattern>
+      <template>
+      	>>>>From CCC take a right for CENTRE CIRCLE (20m).
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>CENTRE CIRCLE TO MB</pattern>
+      <template>
+        >>>>From CENTRE CIRCLE go to the nearest building for MB
+      </template>  
+</category>
+<category>
+      <pattern>MB TO CENTRE CIRCLE</pattern>
+      <template>
+            >>>>From MB exit the MB gate for CENTRE CIRCLE</template>  
+</category>
+<!-- CCC MB -->
+<category>
+      <pattern>CCC TO MB</pattern>
+      <template>
+       <srai>CCC TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO MB</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>MB TO CCC</pattern>
+      <template>
+       <srai>MB TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO CCC</srai>
+   		</template>  
+</category>
+
+<!-- MB NLHC -->
+<category>
+      <pattern>MB TO NLHC</pattern>
+      <template>
+       <srai>MB TO CCC</srai>
+       <srai>CCC TO NLHC</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>NLHC TO MB</pattern>
+      <template>
+       <srai>NLHC TO CCC</srai>
+       <srai>CCC  TO MB</srai>
+   		</template>  
+</category>
+<!-- NLHC ELHC -->
+<category>
+      <pattern>NLHC TO ELHC</pattern>
+      <template>
+      	>>>>From NLHC take a left (50m) for ELHC.</template>  
+</category>
+        	
+ <category>
+      <pattern>ELHC TO NLHC</pattern>
+      <template>
+      	>>>>From ELHC take a right for NLHC (50m).
+      </template>  
+</category>
+
+<!-- elhc ssl -->
+<category>
+      <pattern>ELHC TO SSL </pattern>
+      <template>
+      	>>>>From ELHC take a left,next building after ELHC is SSL 
+      </template>  
+</category>
+
+<category>
+      <pattern>SSL TO ELHC </pattern>
+      <template>
+      	>>>>From SSL take a right,next building after SSL is ELHC 
+      </template>  
+</category>
+
+<!-- ssl to lib -->
+
+<category>
+      <pattern>SSL TO LIBRARY </pattern>
+      <template>
+      	>>>>From SSL take a right (10 m), then take the first left for LIBRARY (50m)
+      </template>  
+</category>
+
+<category>
+      <pattern>LIBRARY TO SSL</pattern>
+      <template>
+      	>>>>From LIBRARY take a right toward CSED (30 m), cross the CSED , take a right for SSL (15m)
+      </template>  
+</category>
+
+<!-- LIBRARY ATM -->
+<category>
+      <pattern>LIBRARY TO ATM</pattern>
+      <template>
+      	>>>>From LIBRARY take a left for main road (30 m)
+      	>>>> take right for ATM (30 m)
+      </template>  
+</category>
+
+<category>
+      <pattern>ATM TO LIBRARY</pattern>
+      <template>
+      	>>>>From ATM take a right (2 m )and again right for main road (30 m)
+      	>>>>take left for ATM (30 m)
+      </template>  
+</category>
+<!-- atm audi -->
+<category>
+      <pattern>MINI TO ATM</pattern>
+      <template>
+            >>>>From MINI take a right go straight on main road (100 m) for ATM
+      </template>  
+</category>
+
+<category>
+      <pattern>ATM TO MINI</pattern>
+      <template>
+            >>>>From ATM take a left (toward A hostel) go straight on main road (100 m) for MINI
+      </template>  
+</category>
+
+<!--  -->
+<category>
+      <pattern>ATM TO AUDI</pattern>
+      <template>
+      	>>>>From ATM take the road toward library (dont go to LIBRARY), keep straight for AUDI
+      </template>  
+</category>
+
+<category>
+      <pattern>AUDI TO ATM </pattern>
+      <template>
+      >>>> Take the left straight Road (50 m)
+      </template>  
+</category>
+
+<!-- AUDI TO MINI -->
+<category>
+      <pattern>AUDI TO MINI</pattern>
+      <template>
+      	>>>>From AUDI take the road toward Central Workshop , keep straight for  (50 m)
+      </template>  
+</category>
+
+<category>
+      <pattern>MINI TO AUDI</pattern>
+      <template>
+      >>>> From MINI take the road toward Central Workshop , keep straight for  (50 m)
+      </template>  
+</category>
+
+
+<category>
+      <pattern>CENTRE CIRCLE TO ATM</pattern>
+      <template>
+            >>>>From CENTRE CIRCLE take a right for ATM (20m).</template>  
+</category>
+            
+ <category>
+      <pattern>ATM TO CENTRE CIRCLE </pattern>
+      <template>
+            >>>>From ATM take a left (Toward CCC) for CENTRE CIRCLE (20m).
+      </template>  
+</category>
+
+<!-- NLHC TO CCC -->
+<category>
+      <pattern>NLHC TO CCC</pattern>
+      <template>
+            >>>>From NLHC take a left (20 m) and take first right (5m ) for CCC.</template>  
+</category>
+            
+ <category>
+      <pattern>CCC TO NLHC</pattern>
+      <template>
+            >>>>From CCC take a left (5m) And again take a left for NLHC (20m).
+      </template>  
+</category>
+<!-- ELHC TO CCC -->
+<category>
+      <pattern>ELHC TO CCC</pattern>
+      <template>
+            >>>>From ELHC take a right (20 m) and take first left (5m ) for CCC.</template>  
+</category>
+            
+ <category>
+      <pattern>CCC TO ELHC</pattern>
+      <template>
+            >>>>From CCC take a left (5m) then take a right for ELHC (20m).
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>LIBRARY TO MB</pattern>
+      <template>
+            >>>>From LIBRARY cross the MB ground for MB (30 m).</template>  
+</category>
+            
+ <category>
+      <pattern>MB TO LIBRARY </pattern>
+      <template>
+            >>>>From MB cross the MB ground for LIBRARY (30 m)
+      </template>  
+</category>
+
+<!--  -->
+<category>
+      <pattern>LIBRARY TO ELHC</pattern>
+      <template>
+      >>>>From LIBRARY take right Cross CSED Take a left for ELHC
+      </template>  
+</category>
+
+<category>
+      <pattern>ELHC TO LIBRARY</pattern>
+      <template>
+       >>>> From ELHC take left toward SSL Take second right and Cross CSED for LIBRARY
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>LIBRARY TO AUDI</pattern>
+      <template>
+            >>>>From LIBRARY take a left(10 m) take a left on main road (50m)</template>  
+</category>
+            
+ <category>
+      <pattern>AUDI TO LIBRARY </pattern>
+      <template>
+            >>>>From AUDI take the main road (toward ATM) and take the 3rd right 
+      </template>  
+</category>
+<!--  -->
+
+
+<!-- ################################################################################ -->
+
+<category>
+      <pattern>MAIN GATE TO CCC</pattern>
+      <template>
+       <srai>MAIN GATE TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO CCC</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>CCC TO MAIN GATE</pattern>
+      <template>
+       <srai>CCC TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+
+<category>
+      <pattern>MAIN GATE TO MB</pattern>
+      <template>
+       <srai>MAIN GATE TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO MB</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>MB TO MAIN GATE</pattern>
+      <template>
+       <srai>MB TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+
+<category>
+      <pattern>MAIN GATE TO NLHC</pattern>
+      <template>
+       <srai>MAIN GATE TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO  CCC</srai>
+       <srai>CCC TO NLHC</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>NLHC TO MAIN GATE</pattern>
+      <template>
+       <srai>NLHC TO CCC</srai>
+       <srai>CCC TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>MAIN GATE TO ELHC</pattern>
+      <template>
+       <srai>MAIN GATE TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO  CCC</srai>
+       <srai>CCC TO ELHC</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>ELHC TO MAIN GATE</pattern>
+      <template>
+       <srai>ELHC TO CCC</srai>
+       <srai>CCC TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>MAIN GATE TO SSL</pattern>
+      <template>
+       <srai>MAIN GATE TO ELHC</srai>
+       <srai>ELHC TO SSL</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>SSL TO MAIN GATE</pattern>
+      <template>
+      <srai>SSL TO ELHC</srai>
+       <srai>ELHC TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>MAIN GATE TO LIBRARY</pattern>
+      <template>
+       <srai>MAIN GATE TO MB</srai>
+       <srai>MB TO LIBRARY</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>LIBRARY TO MAIN GATE</pattern>
+      <template>
+      <srai>LIBRARY TO MB</srai>
+       <srai>MB TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>MAIN GATE TO ATM</pattern>
+      <template>
+       <srai>MAIN GATE TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO ATM</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>ATM TO MAIN GATE</pattern>
+      <template>
+      <srai>ATM TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>MAIN GATE TO AUDI</pattern>
+      <template>
+       <srai>MAIN GATE TO ATM</srai>
+       <srai>ATM TO AUDI</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>AUDI TO MAIN GATE</pattern>
+      <template>
+      <srai>AUDI TO ATM</srai>
+       <srai>ATM TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>MAIN GATE TO MINI</pattern>
+      <template>
+       <srai>MAIN GATE TO ATM</srai>
+       <srai>ATM TO MINI</srai>
+   		</template>  
+</category>
+<category>
+      <pattern>MINI TO MAIN GATE</pattern>
+      <template>
+      <srai>MINI TO ATM</srai>
+       <srai>ATM TO MAIN GATE</srai>
+   		</template>  
+</category>
+
+
+<category>
+      <pattern>CENTRE CIRCLE TO NLHC</pattern>
+      <template>
+       
+       <srai>CENTRE CIRCLE TO CCC</srai>
+       <srai>CCC TO NLHC</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>NLHC TO CENTRE CIRCLE</pattern>
+      <template>
+       <srai>NLHC TO CCC</srai>
+       <srai>CCC TO CENTRE CIRCLE</srai>
+   		</template>  
+</category>
+<!--  -->
+
+<category>
+      <pattern>CENTRE CIRCLE TO ELHC</pattern>
+      <template>
+       
+       <srai>CENTRE CIRCLE TO CCC</srai>
+       <srai>CCC TO ELHC</srai>
+   		</template>  
+</category>
+
+<category>
+      <pattern>ELHC TO CENTRE CIRCLE</pattern>
+      <template>
+       <srai>ELHC TO CCC</srai>
+       <srai>CCC TO CENTRE CIRCLE</srai>
+   		</template>  
+</category>
+<!--  -->
+<category>
+      <pattern>CENTRE CIRCLE TO SSL</pattern>
+      <template>
+       <srai>CENTRE CIRCLE TO ELHC</srai>
+       <srai>ELHC TO SSL</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>SSL TO CENTRE CIRCLE</pattern>
+      <template>
+       <srai>SSL TO ELHC</srai>
+       <srai>ELHC TO CENTRE CIRCLE</srai>
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>CENTRE CIRCLE TO LIBRARY</pattern>
+      <template>
+       <srai>CENTRE CIRCLE TO MB</srai>
+       <srai>MB TO LIBRARY</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>LIBRARY TO CENTRE CIRCLE</pattern>
+      <template>
+       <srai>LIBRARY TO MB</srai>
+       <srai>MB TO CENTRE CIRCLE</srai>
+      </template>  
+</category>
+
+
+<!--  -->
+<category>
+      <pattern>CENTRE CIRCLE TO AUDI</pattern>
+      <template>
+       
+       <srai>CENTRE CIRCLE TO ATM</srai>
+       <srai>ATM TO AUDI</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>AUDI TO CENTRE CIRCLE</pattern>
+      <template>
+       <srai>AUDI TO ATM</srai>
+       <srai>ATM TO CENTRE CIRCLE</srai>
+            </template>  
+</category>
+
+
+<category>
+      <pattern>CENTRE CIRCLE TO MINI</pattern>
+      <template>
+       
+       <srai>CENTRE CIRCLE TO ATM</srai>
+       <srai>ATM TO MINI</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>MINI TO CENTRE CIRCLE</pattern>
+      <template>
+       <srai>MINI TO ATM</srai>
+       <srai>ATM TO CENTRE CIRCLE</srai>
+            </template>  
+</category>
+           
+ <category>
+      <pattern>CCC TO SSL</pattern>
+      <template>
+       <srai>CCC TO ELHC</srai>
+       <srai>ELHC TO SSL</srai>
+            </template>  
+</category>
+<category>
+      <pattern>SSL TO CCC</pattern>
+      <template>
+      <srai>SSL TO ELHC</srai>
+      <srai>ELHC TO CCC</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>CCC TO LIBRARY</pattern>
+      <template>
+       <srai>CCC TO MB</srai>
+       <srai>MB TO LIBRARY</srai>
+      </template>  
+</category>
+<category>
+      <pattern>LIBRARY TO CCC</pattern>
+      <template>
+      <srai>LIBRARY TO MB</srai>
+      <srai>MB TO CCC</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>CCC TO ATM</pattern>
+      <template>
+       <srai>CCC TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO ATM</srai>
+      </template>  
+</category>
+<category>
+      <pattern>ATM TO CCC</pattern>
+      <template>
+      <srai>ATM TO CENTRE CIRCLE</srai>
+      <srai>CENTRE CIRCLE TO CCC</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>CCC TO AUDI</pattern>
+      <template>
+       <srai>CCC TO ATM</srai>
+       <srai>ATM TO AUDI</srai>
+      </template>  
+</category>
+<category>
+      <pattern>AUDI TO CCC</pattern>
+      <template>
+      <srai>AUDI TO ATM</srai>
+      <srai>ATM TO CCC</srai>
+      </template>  
+</category>
+
+
+<category>
+      <pattern>CCC TO MINI</pattern>
+      <template>
+       <srai>CCC TO ATM</srai>
+       <srai>ATM TO MINI</srai>
+      </template>  
+</category>
+<category>
+      <pattern>MINI TO CCC</pattern>
+      <template>
+      <srai>MINI TO ATM</srai>
+      <srai>ATM TO CCC</srai>
+      </template>  
+</category>
+
+<!--  -->
+<category>
+      <pattern>ELHC TO MB</pattern>
+      <template>
+       <srai>ELHC TO CCC</srai>
+       <srai>CCC TO MB</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>MB TO ELHC</pattern>
+      <template>
+       <srai>MB TO CCC</srai>
+       <srai>CCC TO ELHC</srai>
+      </template>  
+</category>
+<!--  -->
+
+<category>
+      <pattern>SSL TO MB</pattern>
+      <template>
+       <srai>SSL TO ELHC</srai>
+       <srai>ELHC TO MB</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>MB TO SSL</pattern>
+      <template>
+       <srai>MB TO ELHC</srai>
+       <srai>ELHC TO SSL</srai>
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>ATM TO MB</pattern>
+      <template>
+      <srai>ATM TO CENTRE CIRCLE</srai>
+      <srai>CENTRE CIRCLE TO MB</srai>
+      </template>  
+</category>
+<category>
+      <pattern>MB TO ATM</pattern>
+      <template>
+      <srai>MB TO CENTRE CIRCLE</srai>
+      <srai>CENTRE CIRCLE TO ATM</srai>
+      </template>  
+</category>
+<!--  -->
+
+<category>
+      <pattern>AUDI TO MB</pattern>
+      <template>
+      <srai>AUDI TO LIBRARY</srai>
+      <srai>LIBRARY TO MB</srai>
+      </template>  
+</category>
+<category>
+      <pattern>MB TO AUDI</pattern>
+      <template>
+      <srai>MB TO LIBRARY</srai>
+      <srai>LIBRARY TO AUDI</srai>
+      </template>  
+</category>
+<!--  -->
+
+<category>
+      <pattern>MINI TO MB</pattern>
+      <template>
+      <srai>MINI TO CENTRE CIRCLE</srai>
+      <srai>CENTRE CIRCLE TO MB</srai>
+      </template>  
+</category>
+<category>
+      <pattern>MB TO MINI</pattern>
+      <template>
+      <srai>MB TO CENTRE CIRCLE</srai>
+      <srai>CENTRE CIRCLE TO MINI</srai>
+      </template>  
+</category>
+
+<!--  -->
+
+<category>
+      <pattern>SSL TO NLHC</pattern>
+      <template>
+       <srai>SSL TO ELHC</srai>
+       <srai>ELHC TO NLHC</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>NLHC TO SSL</pattern>
+      <template>
+       <srai>NLHC TO ELHC</srai>
+       <srai>ELHC TO SSL</srai>
+      </template>  
+</category>
+
+<!--  -->
+
+<category>
+      <pattern>LIBRARY TO NLHC</pattern>
+      <template>
+       <srai>LIBRARY TO MB</srai>
+       <srai>MB TO NLHC</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>NLHC TO LIBRARY</pattern>
+      <template>
+       <srai>NLHC TO MB</srai>
+       <srai>MB TO LIBRARY</srai>
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>ATM TO NLHC</pattern>
+      <template>
+       <srai>ATM TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO NLHC</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>NLHC TO ATM</pattern>
+      <template>
+       <srai>NLHC TO CENTRE CIRCLE</srai>
+       <srai>CENTRE CIRCLE TO ATM</srai>
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>AUDI TO NLHC</pattern>
+      <template>
+       <srai>AUDI TO ATM</srai>
+       <srai>ATM TO NLHC</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>NLHC TO AUDI</pattern>
+      <template>
+       <srai>NLHC TO ATM</srai>
+       <srai>ATM TO AUDI</srai>
+      </template>  
+</category>
+
+<!--  -->
+<category>
+      <pattern>MINI TO NLHC</pattern>
+      <template>
+       <srai>MINI TO ATM</srai>
+       <srai>ATM TO NLHC</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>NLHC TO MINI</pattern>
+      <template>
+       <srai>NLHC TO ATM</srai>
+       <srai>ATM TO MINI</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>ELHC TO ATM</pattern>
+      <template>
+      <srai>ELHC TO CENTRE CIRCLE</srai>
+      <srai>CENTRE CIRCLE TO ATM</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>ATM TO ELHC</pattern>
+      <template>
+      <srai>ATM TO CENTRE CIRCLE</srai>
+      <srai>CENTRE CIRCLE TO ELHC</srai>
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>ELHC TO AUDI</pattern>
+      <template>
+      <srai>ELHC TO LIBRARY</srai>
+      <srai>LIBRARY TO AUDI</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>AUDI TO ELHC</pattern>
+      <template>
+      <srai>AUDI TO LIBRARY</srai>
+      <srai>LIBRARY TO ELHC</srai>
+      </template>  
+</category>
+
+<!--  -->
+<category>
+      <pattern>ELHC TO MINI</pattern>
+      <template>
+      <srai>ELHC TO ATM</srai>
+      <srai>ATM TO MINI</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>MINI TO ELHC</pattern>
+      <template>
+      <srai>MINI TO ATM</srai>
+      <srai>ATM TO ELHC</srai>
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>SSL TO ATM</pattern>
+      <template>
+       <srai>SSL TO LIBRARY</srai>
+       <srai>LIBRARY TO ATM</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>ATM TO SSL</pattern>
+      <template>
+       <srai>ATM TO LIBRARY</srai>
+       <srai>LIBRARY TO SSL</srai>
+      </template>  
+</category>
+
+<!--  -->
+
+<category>
+      <pattern>SSL TO AUDI</pattern>
+      <template>
+       <srai>SSL TO LIBRARY</srai>
+       <srai>LIBRARY TO AUDI</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>AUDI TO SSL</pattern>
+      <template>
+       <srai>AUDI TO LIBRARY</srai>
+       <srai>LIBRARY TO SSL</srai>
+      </template>  
+</category>
+<!--  -->
+
+<category>
+      <pattern>SSL TO MINI</pattern>
+      <template>
+       <srai>SSL TO ELHC</srai>
+       <srai>ELHC TO MINI</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>MINI TO SSL</pattern>
+      <template>
+       <srai>MINI TO ELHC</srai>
+       <srai>ELHC TO SSL</srai>
+      </template>  
+</category>
+<!--  -->
+<category>
+      <pattern>LIBRARY TO MINI</pattern>
+      <template>
+       <srai>LIBRARY TO ATM</srai>
+       <srai>ATM TO MINI</srai>
+            </template>  
+</category>
+
+<category>
+      <pattern>MINI TO LIBRARY</pattern>
+      <template>
+       <srai>MINI TO ATM</srai>
+       <srai>ATM TO LIBRARY</srai>
+      </template>  
+</category>
+
+<category>
+      <pattern>*</pattern>
+      <template>
+       <random>
+       	<li>I'm not sure I understand that. Could you please rephrase your request?</li>
+		<li>I don't think I know what you're talking about.</li>
+		<li>I'm not sure I know how to respond to that.</li>
+		<li>Rephrase your query, please?</li>
+		<li>Pardon? I don't understand.</li>
+	</random>
+	Sorry!!!!
+   	  </template>  
+</category>
+
+</aiml>

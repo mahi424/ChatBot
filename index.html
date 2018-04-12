@@ -1,0 +1,164 @@
+<html>
+	<!-- // <script src="jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<style>
+	@font-face {
+	  font-family: 'Nunito';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Nunito Regular'), local('Nunito-Regular'), url(font.woff2) format('woff2');
+	}
+	body{
+		font-family: 'Nunito';
+	}
+	.from{
+		width: 90%;
+	}
+	.to{
+			text-align: right;
+			width: 90%;
+			margin-left: 10%;
+	}
+	.message{
+
+	}
+	.time{
+		font-size: 0.5em;
+		padding: 10px;
+	}
+	.greeny{
+		background-color: #afa !important;
+	}
+
+
+	#top_banner{
+		position: fixed;
+		height: 60px;
+		background-color: #040;
+		width: 100%;
+		left:0;
+		top:0;
+		color:#fff;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	}
+	#main_heading{
+		height: 40px;
+		text-align: center;
+	}
+	#chat_area{
+		position: fixed;
+		background-image:url(bg.png);
+		background-size: cover;
+		top:60px;
+		width: 100%;
+		left:0px;
+		height: calc(100% - 100px);
+		overflow:auto; display:flex; flex-direction:column-reverse;
+	}
+	#input_area{
+		background-color: #040;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		display: flex;
+		align-items: center;
+	}
+	#query{
+		color:#fff;
+		font-size: 16px;
+		flex-grow: 9;
+		margin:10px;
+		border-style: none;
+		border-bottom-style: solid;
+		background-color: #040;
+		outline: none;
+	}
+	#button{
+		flex-grow: 1;
+	}
+	.card{
+		background-color: #fff;
+		margin: 10px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+		border-radius: 5px;
+		padding: 10px;
+	}
+	#send_icon{
+		height: 50px;
+	}
+	</style>
+	<body>
+		<div id='top_banner'>
+				<h2 id='main_heading'>NITC Support Bot</h2>
+		</div>
+		<div id='chat_area' class='container'>
+
+		</div>
+		<div id='input_area'>
+					<input id='query' type='text'>
+					<div id='button' onclick='push_our_chatbox()'><img id='send_icon' src='send-icon.png'</div>
+		</div>
+
+	<script>
+	$(document).ready(function(){
+		$("#query").on('keyup', function (e) {
+    if (e.keyCode == 13) {
+        push_our_chatbox();
+    }
+});
+	});
+		function ask_chatbot(query){
+			$.ajax({
+				data: "query="+query,
+				// url: "http://athena.nitc.ac.in/amal_b140033cs/use_chatbot.php",
+				url: "http://localhost/BOTTT/use_chatbot.php",
+				method:"POST",
+				success : function(data){
+					console.log("Asing chatbot : "+query);
+					console.log("Got reply     : "+data);
+					data=data.replace(/>>>>/g,"<br>");
+					console.log("After replace="+data)
+					push_your_chatbox(data);
+					$("#query").val('');
+				},
+				complete: function(data,s){
+					console.log("Complete "+data+" ; "+s);
+console.log(data);
+				}
+			});
+		}
+
+		function push_our_chatbox(){
+				var query=$("#query").val();
+				var time=new Date().getHours()+":"+new Date().getMinutes();
+				var html="<div class='to'>";
+				html+="	<div class='card'>";
+				html+="		<div class='card-content message'>";
+				html+=query;
+				html+="		</div>";
+				html+="		<div class='time left-align'>"+time+"</div>";
+				html+="	</div>";
+				html+="</div>";
+				$("#chat_area").html(html+$("#chat_area").html());
+				ask_chatbot(query);
+		}
+
+		function push_your_chatbox(response){
+				var time=new Date().getHours()+":"+new Date().getMinutes();
+				var html="<div class='from'>";
+				html+="	<div class='greeny card'>";
+				html+="		<div class='card-content message'>";
+				html+=response;
+				html+="		</div>";
+		    html+="    <div class='time right-align'>"+time+"</div>";
+				html+="	</div>";
+				html+="</div>";
+				$("#chat_area").html(html+$("#chat_area").html());
+		}
+	</script>
+	</body>
+
+</html>

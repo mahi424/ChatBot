@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<meta name="author" content="mahi"/>
+
+<meta name="language" content="en"/>
+
+ <category>
+      <pattern>_ SYLLABUS OF WEB PROGRAMMING _</pattern>
+      <template>
+    Module 1:
+>>>> >>>>
+	Internet and its architecture, Client Server Networking - Creating an Internet Client, Application
+	Protocols and http, Presentation aspects html, CSS and Java script, Creating a web server, Serving
+	Dynamic Content- CGI  overview of technologies like PHP  applets  JSP. Implementation examples.
+>>>> >>>>
+	Module 2:
+>>>> >>>>
+	Web server architecture, Programming threads in C, Shared memory synchronization, Performance
+	measurement and workload models. Comparison using existing benchmarks.
+>>>> >>>>
+	Module 3:
+>>>> >>>>
+	Web development frameworks  Detailed study of one open source web framework - Ruby
+	Scripting, Ruby on rails  Design, Implementation and Maintenance aspects.
+>>>> >>>>
+	Module 4:
+>>>> >>>>
+	Service Oriented Architecture  SOAP. Web 2.0 technologies.  AJAX. Development using Web2.0
+	technologies. Introduction to semantic web.
+>>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR WEB PROGRAMMING _</pattern>
+      <template>
+    1. Dave Thomas, with Chad Fowler and Andy Hunt. Programming Ruby: The Pragmatic Programmer's Guide (3/e),
+	Pragmatic Programmers, May 2008. >>>> >>>>
+	2. Balachander Krishnamurthy and Jennifer Rexford. Web Protocols and Practice: HTTP/1.1, Networking Protocols,
+	Caching, and Traffic Measurement (1/e), Addison Wesley Professional, 2001. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF DATA MINING _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Introduction to data mining-challenges and tasks Data preprocessing data analysis, measures of
+	similarity and dissimilarity, Data visualization concepts and techniques. >>>> >>>>
+	Module 2: >>>> >>>>
+	Classification- decision tree-performance evaluation of the classifier, comparison of different
+	classifiers, Rule based classifier, Nearest-neighbor classifiers-Bayesian classifiers-support vector
+	machines, Class imbalance problem. >>>> >>>>
+	Module 3: >>>> >>>>
+	Association analysis frequent item generation rule generation, evaluation of association patterns. >>>> >>>>
+	Module 4: >>>> >>>>
+	Cluster analysis,-types of clusters, K means algorithm, cluster evaluation, application of data mining
+	to web mining and Bioinformatics. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR DATA MINING _</pattern>
+      <template>
+    1. Pang-Ning Tan,Michael Steinbach and Vipin Kumar , Introduction to Data Mining, Pearson Education 2006. >>>> >>>>
+	2. Han and Kamber, Data Mining: Concepts and Techniques (2e), Morgan Kaufmann, 2005. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF NATURAL LANGUAGE PROCESSING _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Introduction to Natural Language Processing, Different Levels of language analysis, Representation
+	and understanding, Linguistic background. Grammars and parsing, Top down and Bottom up parsers. >>>> >>>>
+	Module 2: >>>> >>>>
+	Transition Network Grammars, Feature systems and augmented grammars, Morphological analysis
+	and the lexicon, Parsing with features, Augmented Transition Networks. >>>> >>>>
+	Module 3: >>>> >>>>
+	Grammars for natural language, Movement phenomenon in language, Handling questions in context
+	free grammars, Hold mechanisms in ATNs, Gap threading, Human preferences in parsing, Shift
+	reduce parsers, Deterministic parsers, Statistical methods for Ambiguity resolution. >>>> >>>>
+	Module 4: >>>> >>>>
+	Semantic Interpretation, word senses and ambiguity, Basic logical form language, Encoding
+	ambiguity in logical from, Thematic roles, Linking syntax and semantics, Information Retrieval,
+	Recent trends in NLP. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR NATURAL LANGUAGE PROCESSING _</pattern>
+      <template>
+    1. James Allen, Natural Language Understanding (2/e), Pearson Education, 2003 >>>> >>>>
+	2. T Siddiqui and U S Tiwary, Natural Language Processing and Information Retrieval, Oxford University Press, 2008 >>>> >>>>
+	3. D Juraffsky and J H Martin, Speech and Language Processing, Pearson Education, 2000 >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF IMAGE PROCESSING _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Fundamentals of Image processing: Digital image representation, Elements of Digital image
+	processing systems, Image model, Sampling and Quantization, Basic relations between pixels.
+	Image transforms: One dimensional Fourier transform, Two dimensional Fourier transform,
+	Properties of two dimensional Fourier transform. Walsh transform, Hadamard transform, Discrete
+	cosine transform, Haar transform, Slant transform. >>>> >>>>
+	Module 2: >>>> >>>>
+	Image enhancement techniques: Spatial domain methods, Frequency domain methods, Intensity
+	transform, Histogram processing, Image subtraction, Image averaging, Smoothing filters, Sharpening
+	filters, Spatial masks from frequency domain. >>>> >>>>
+	Module 3: >>>> >>>>
+	Image Segmentation: Thresholding: Different types of thresholding methods, Point detection, Edge
+	detection: Different types of edge operators, Line detection, Edge linking and boundary detection,
+	Region growing, Region splitting, Region Merging.
+	Module 4: >>>> >>>>
+	Image Data Compression: Fundamentals, Compression models, Error free compression, Lossy
+	Compression, Image compression standards.
+	Applications of Image Processing: Medical imaging, Robot vision, Character recognition, Remote
+	Sensing. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR IMAGE PROCESSING _</pattern>
+      <template>
+    1. R.C.Gonzalez and R.E.Woods, . Digital Image Processing, Addison-Wesley Publishing Company, 2007. >>>> >>>>
+	2. Milan Sonka, Vaclav Hlavac and Roger Boyle, Image Processing, Analysis, and Machine Vision, (2/e), PWS
+	Publishing, 1999 >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF BIOINFORMATICS _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Molecular biology primer, gene structure and information content, Bioinformatics tools and
+	databases, genomic information content, Sequence Alignment, Algorithms for global and local
+	alignments, Scoring matrices, Dynamic Programming algorithms. >>>> >>>>
+	Module 2: >>>> >>>>
+	Introduction to Bio-programming languages, Restriction Mapping and Motif finding, Gene
+	Prediction, Molecular Phylogenetics, Phylogenetic trees, Algorithms for Phylogenetic Tree
+	construction. >>>> >>>>
+	Module 3: >>>> >>>>
+	Combinatorial pattern matching, Repeat finding, Keyword Trees, Suffix Trees, Heuristic similarity
+	search algorithms, Approximate pattern matching. >>>> >>>>
+	Module 4: >>>> >>>>
+	Microarrays, Gene expression, Algorithms for Analyzing Gene Expression data, Protein and RNA
+	structure prediction, Algorithms for structure prediction. Emerging trends in bioinformatics
+	algorithms and databases. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR BIOINFORMATICS _</pattern>
+      <template>
+    1. Neil C Jones and Pavel A Pevzner, An Introduction to Bioinformatics Algorithms, MIT Press, 2004. >>>> >>>>
+	2. David W Mount, Bioinformatics- Sequence and Genome Analysis, (2/e), Cold Spring Harbor Laboratory Press, New
+	York, 2004. >>>> >>>>
+	3. D. E. Krane and M. L. Raymer, Fundamental Concepts of Bioinformatics, Pearson Education, 2003. >>>> >>>>
+	4. T. K. Attwood and D. J. Parry-Smith, Introduction to Bioinformatics, Pearson Education, 2003. >>>> >>>>
+	5. Current Literature. >>>> >>>>
+	      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF DISTRIBUTED COMPUTING _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Characteristics of Distributed Systems, Distributed systems Versus Parallel systems, Models of
+	distributed systems, Happened Before and Potential Causality Model, Models based on States,
+	Logical clocks, Vector clocks, Verifying clock algorithms, Direct dependency clocks. >>>> >>>>
+	Module 2: >>>> >>>>
+	Mutual exclusion using Time stamps, Distributed Mutual Exclusion (DME) using timestamps, token
+	and Quorums, Centralized and distributed algorithms, proofs of correctness and complexity analysis.
+	Drinking philosophers problem, Dining philosophers problem under heavy and light load conditions.
+	Implementation and performance evaluation of DME algorithms. >>>> >>>>
+	Module 3: >>>> >>>>
+	Leader election algorithms, Global state detection, Global predicates, Termination Detection, Control
+	of distributed computation, disjunctive predicates. Performance evaluation of leader election
+	algorithms on simulated environments. >>>> >>>>
+	Module 4: >>>> >>>>
+	Self stabilization, knowledge and common knowledge, Distributed consensus, Consensus under
+	Asynchrony and Synchrony, Check pointing for Recovery, R- Graphs. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR DISTRIBUTED COMPUTING _</pattern>
+      <template>
+    1. Vijay K. Garg., Elements of Distributed Computing, Wiley and Sons, 2002 >>>> >>>>
+	2. Sukumar Ghosh, Distributed Systems An Algorithmic Approach, Chapman and Hall, CRC Computer and
+	Information Science Series, 2006. >>>> >>>>
+	3. Tanenbaum S, Distributed Operating Systems, Pearson Education.,2005 >>>> >>>>
+	4. Coulouris G, Dollimore J. and Kindberg T., Distributed Systems Concepts And Design, 2/e, Addison Wesley
+	2004 >>>> >>>>
+	5. Chow R. and Johnson T., Distributed Operating Systems and Algorithms, Addison Wesley, 2002 >>>> >>>>
+	      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF COMPUTATIONAL INTELLIGENCE _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Artificial Intelligence: History and Applications, Production Systems, Structures and Strategies for
+	state space search- Data driven and goal driven search, Depth First and Breadth First Search, DFS
+	with Iterative Deepening, Heuristic Search- Best First Search, A* Algorithm, AO* Algorithm, Local
+	Search Algorithms and Optimization Problems, Constraint satisfaction, Using heuristics in games-
+	Minimax Search, Alpha Beta Procedure. Implementation of Search Algorithms in LISP. >>>> >>>>
+	Module 2: >>>> >>>>
+	Knowledge representation - Propositional calculus, Predicate Calculus, Forward and Backward
+	chaining, Theorem proving by Resolution, Answer Extraction, AI Representational Schemes-
+	Semantic Nets, Conceptual Dependency, Scripts, Frames, Introduction to Agent based problem
+	solving. Implementation of Unification, Resolution and Answer Extraction using Resolution. >>>> >>>>
+	Module 3: >>>> >>>>
+	Machine Learning- Symbol based and Connectionist, Social and Emergent models of learning,
+	Planning-Planning and acting in the real World, The Genetic Algorithm- Genetic Programming,
+	Overview of Expert System Technology- Rule based Expert Systems, Introduction to Natural
+	Language Processing. Implementation of Machine Learning algorithms. >>>> >>>>
+	Module 4: >>>> >>>>
+	Languages and Programming Techniques for AI- Introduction to PROLOG and LISP, Search
+	strategies and Logic Programming in LISP, Production System examples in PROLOG. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR COMPUTATIONAL INTELLIGENCE _</pattern>
+      <template>
+    1. George F Luger, Artificial Intelligence- Structures and Strategies for Complex Problem Solving, 4/e, 2002,
+	Pearson Education. >>>> >>>>
+	2. E. Rich and K.Knight, Artificial Intelligence, 2/e, Tata McGraw Hill >>>> >>>>
+	3. S Russel and P Norvig, Artificial Intelligence- A Modern Approach, 2/e, Pearson Education, 2002 >>>> >>>>
+	4. Nils J Nilsson, Artificial Intelligence a new Synthesis, Elsevier,1998 >>>> >>>>
+	5. Winston. P. H, LISP, Addison Wesley >>>> >>>>
+	6. Ivan Bratko, Prolog Programming for Artificial Intelligence, 3/e, Addison Wesley, 2000 >>>> >>>>
+	7. Dr.Russell Eberhart and Dr.Yuhui shi, Computational Intelligence - Concepts to Implementation, Elsevier,
+	2007 >>>> >>>>
+	8. Fakhreddine O Karray, Clarence De Silva, Soft Computing and Intelligent Systems Design- Theory tools
+	and Applications, Pearson Education, 2009. >>>> >>>>
+	      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF PATTERN RECOGNITION _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Introduction: Machine Perception , Pattern Recognition Systems, The Design Cycle, Learning
+	and Adaptation.
+	Baye’s Decision Theory: Bayes Decision Theory, Minimum Error rate Classification,
+	Classifiers, Discriminant functions and Decision Surfaces, Normal Density, Discriminant
+	functions for the Normal Density, Bayes Decision Theory for Discrete features. >>>> >>>>
+	Module 2: >>>> >>>>
+	Maximum Likelihood and Bayesian Parameter Estimation :Maximum Likelihood Estimation,
+	Bayesian Estimation, Bayesian Parameter Estimation, Gaussian Case and General
+	Theory.
+	Non Parametric Techniques: Density Estimation, Parzen Windows , K- Nearest Neighbor
+	Estimation,NN rule, Metrics and NN Classification, Fuzzy Classification. >>>> >>>>
+	Module 3: >>>> >>>>
+	Linear Descriminant Functions : Linear Discriminant Functions and Decision Surfaces,
+	Generalized Discriminant Functions, The two-category linearly separable case , Minimizing
+	the perceptron criterion function, relaxation procedures, non- separable behavior,
+	Minimum Squared- Error procedures. >>>> >>>>
+	Module 4: >>>> >>>>
+	Multi Layer Neural Networks : Feed-forward Operation, Classification, Back  propagation
+	Algorithm, Error Surfaces, Back-propagation as Feature mapping. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR PATTERN RECOGNITION _</pattern>
+      <template>
+    1. R. O. Duda, P. E. Hart and D. G. Stork, Pattern Classification , John-Wiley, 2004 >>>> >>>>
+	2. J. T. Tou and R. C. Gonzalez, Pattern Recognition Principles, by Tou and Gonzalez, Wiley, 1974. >>>> >>>>
+	      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF QUANTUM COMPUTATION _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Review of Linear Algebra. The postulates of quantum mechanics. Review of Theory of Finite
+	Dimensional Hilbert Spaces and Tensor Products. >>>> >>>>
+	Module 2: >>>> >>>>
+	Complexity classes. Models for Quantum Computation. Qubits. Single and multiple qubit gates.
+	Quantum circuits. Bell states. Single qubit operations. Controlled operations and measurement.
+	Universal quantum gates. Quantum Complexity classes and relationship with classical complexity
+	classes. >>>> >>>>
+	Module 3: >>>> >>>>
+	Quantum Algorithms  Quantum search algorithm - geometric visualization and performance.
+	Quantum search as a quantum simulation. Speeding up the solution of NP Complete problems.
+	Quantum search as an unstructured database. Grover’s and Shor’s Algorithms. >>>> >>>>
+	Module 4: >>>> >>>>
+	Introduction to Quantum Coding Theory. Quantum error correction. The Shor code. Discretization of
+	errors, Independent error models, Degenerate Codes. The quantum Hamming bound. Constructing
+	quantum codes  Classical linear codes, Shannon entropy and Von Neuman Entropy. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR QUANTUM COMPUTATION _</pattern>
+      <template>
+    1. Nielsen, Michael A., and Isaac L. Chuang, Quantum Computation and Quantum Information. Cambridge, UK,
+	Cambridge University Press, September 2002 >>>> >>>>
+	2. Gruska, J. Quantum Computing, McGraw Hill, 1999. >>>> >>>>
+	3. Halmos, P. R. Finite Dimensional Vector Spaces, Van Nostrand, 1958. >>>> >>>>
+	4. Peres, Asher. Quantum Theory: Concepts and Methods. New York, NY: Springer, 1993. ISBN: 9780792325499. >>>> >>>>
+	      </template>
+</category>
+
+<category>
+      <pattern>_ SYLLABUS OF COMPUTER GRAPHICS _</pattern>
+      <template>
+    Module 1: >>>> >>>>
+	Graphics Pipeline - overview of vertex processing, primitive generation, transformations and
+	projections, clipping, rasterisation, fragment processing - Graphics Hardware - overview of GPU
+	architecture, how GPUs SIMD architecture suits computer graphics. >>>> >>>>
+	Module 2: >>>> >>>>
+	Coordinate Systems - representations, homogenous coordinates, object, camera, world, and screen
+	coordinate system, changing coordinate systems. Transformations - affine transformations,
+	translation, rotation, scaling in homogenous coordinates, matrix representations, cumulation of
+	transformations. Viewing and Projections - orthographic and perspective projection, camera
+	positioning, Hidden Surface Removal - its importance in rendering, z buffer algorithm, clipping,
+	culling, Data Structures for efficient implementation of the transformations and projections. >>>> >>>>
+	Module 3: >>>> >>>>
+	Lighting and Shading - light sources, normal computation, reflection models, flat and smooth
+	shading , Introduction to Textures and Mapping - Rendering Techniques - slicing, volume rendering,
+	iso-surface extraction, ray casting, multi resolution representations for large data rendering. Data
+	Structures for efficient implementation. >>>> >>>>
+	Module 4: >>>> >>>>
+	Geometric Modelling - Data structures - tree representations, hierarchical models, scene graphs -
+	particle systems and representations - introduction to modeling and solving dynamics based on
+	physics, Introduction to Curves Surfaces (Bezier, splines) and Meshes - structured and unstructured. >>>> >>>>
+      </template>
+</category>
+
+<category>
+      <pattern>_ REFERENCES FOR COMPUTER GRAPHICS _</pattern>
+      <template>
+    1. E. S. Angel, Interactive Computer Graphics, A top-down approach with OpenGL, (5e), Pearson Education, 2009
+<!--</br> -->
+	2. D. Hearn and M. P. Baker, Computer Graphisc with OpenGL, Prentice Hall, 2003, (3/e), Prentice Hall, 2003 >>>> >>>>
+	      </template>
+</category>
+
+<category>
+      <pattern>*</pattern>
+      <template>
+       <random>
+       	<li>I'm not sure I understand that. Could you please rephrase your request?</li>
+		<li>I don't think I know what you're talking about.</li>
+		<li>I'm not sure I know how to respond to that.</li>
+		<li>Rephrase your query, please?</li>
+		<li>Pardon? I don't understand.</li>
+	</random>
+	Sorry!!!!
+   	  </template>
+</category>
+
+
+
+</aiml>

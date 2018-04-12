@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category>
+<pattern>* TIMES *</pattern>
+<template><think><set name="num1"><star/></set> <set name="number2"><person><star 
+
+index="2"/></person></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the answer to that one is </li>
+</random> 
+<system>
+		python math_aiml/MathScripts/multiply.py <get name="num1"/> <get name="number2" />
+</system>
+</template>
+</category>
+
+
+<!--  -->
+
+
+<category>
+<pattern>* INTO *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * INTO *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME * INTO *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+
+<!--  -->
+
+
+<category>
+<pattern>* TIMES * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TIMES * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* X * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* X * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MULTIPLIED BY * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MULTIPLIED BY * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * TIMES *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * AND *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * * *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WHAT IS * TIMES *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * TIMES * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * TIMES * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * X * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * X * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * MULTIPLIED BY * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * MULTIPLIED BY * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WHAT IS * TIMES *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * TIMES * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * TIMES * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * X * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * X * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<!--  -->
+
+<!--  -->
+<category>
+<pattern>TELL ME WHAT IS * TIMES *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * TIMES * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * TIMES * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * X * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * X * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * MULTIPLIED BY * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * MULTIPLIED BY * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category> 
+
+
+<category>
+<pattern>TELL ME WHAT * TIMES * IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * TIMES * EQUAL IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * TIMES * EQUALS IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * X * IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * X * EQUAL IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * X * EQUALS IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * MULTIPLIED BY * IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * MULTIPLIED BY * EQUAL IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * MULTIPLIED BY * EQUALS IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category> 
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * TIMES * IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * TIMES * EQUAL IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * TIMES * EQUALS IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * X * IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * X * EQUAL IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * X * EQUALS IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * MULTIPLIED BY * IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * MULTIPLIED BY * EQUAL IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * MULTIPLIED BY * EQUALS IS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category> 
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * TIMES *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * TIMES * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * TIMES * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * X * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * X * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * MULTIPLIED BY * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * MULTIPLIED BY * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category> 
+
+
+
+
+</aiml>

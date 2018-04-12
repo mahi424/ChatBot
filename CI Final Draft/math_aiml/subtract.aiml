@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+<category>
+<pattern>* MINUS *</pattern>
+<template><think><set name="num1"><star/></set> <set name="number2"><person><star 
+
+index="2"/></person></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the answer to that one is </li>
+</random> 
+<system>
+		python math_aiml/MathScripts/subtract.py <get name="num1"/> <get name="number2" />
+</system>
+</template>
+</category>
+
+<category>
+<pattern>* MINUS * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MINUS * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* SUBTRACTED FROM *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* SUBTRACTED FROM * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* SUBTRACTED FROM * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * MINUS *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * - *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * - * =</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * AND *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * SUBTRACTED FROM *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WHAT IS * MINUS *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * MINUS * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * MINUS * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * SUBTRACTED FROM *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * SUBTRACTED FROM * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * SUBTRACTED FROM * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>TELL ME WHAT IS * MINUS *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * MINUS * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * MINUS * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * SUBTRACTED FROM *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * SUBTRACTED FROM * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT IS * SUBTRACTED FROM * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+
+
+<category>
+<pattern>TELL ME WHAT * MINUS * IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * MINUS * EQUALS IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * MINUS * EQUAL IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * SUBTRACTED FROM * IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * SUBTRACTED FROM * EQUAL IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * SUBTRACTED FROM * EQUALS IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * MINUS * IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * MINUS * EQUALS IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * MINUS * EQUAL IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * SUBTRACTED FROM * IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * SUBTRACTED FROM * EQUAL IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT * SUBTRACTED FROM * EQUALS IS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * MINUS *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * MINUS * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * MINUS * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * SUBTRACTED FROM *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * SUBTRACTED FROM * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WILL YOU TELL ME WHAT IS * SUBTRACTED FROM * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+
+
+</aiml>
